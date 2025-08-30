@@ -1,3 +1,6 @@
 pages\BasePage.class
+pages\LandingPage.class
 utils\ConfigReader.class
+pages\LoginPage.class
 factory\DriverFactory.class
+pages\HomePage.class

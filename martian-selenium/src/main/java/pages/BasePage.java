@@ -11,7 +11,7 @@ import utils.ConfigReader;
 
 public class BasePage {
     protected WebDriver driver;
-    private WebDriverWait wait;
+    protected WebDriverWait wait;
 
 
     public BasePage(WebDriver driver){
@@ -20,7 +20,7 @@ public class BasePage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
     }
     protected void click(By locator){
-        wait.until(ExpectedConditions.elementToBeClickable(locator));
+        wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
 
     protected void type(By locator, String text){
